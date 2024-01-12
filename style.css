@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Montserrat:wght@500&family=Raleway&family=Rubik:wght@300&display=swap");
+:root {
+  --global-font: "Raleway", "sans-serif";
+  --heading-font: "Rubik", "sans-serif";
+  --header-footer: #497e4cc7;
+  --body-bg: #8fccd8e8;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.spacer {
+  height: 30px;
+  background-color: #99D1DC;
+}
+/* NAVBAR */
+nav {
+  background-color: var(--header-footer);
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-logo {
+  max-height: 12vh;
+  max-width: 80vw;
+}
+.nav-logo img {
+  width: 180px;
+  /* height: 70px; */
+  cursor: pointer;
+}
+.nav-search > search {
+  display: inline-block !important;
+}
+.nav-search input {
+  height: 40px;
+  width: 250px;
+  border-radius: 4px 4px 4px 4px;
+  border: none;
+  caret-color: #fd004e;
+  padding: 0px 5px;
+  box-shadow: 2px 1px 10px 1px black;
+}
+.nav-search input::placeholder{
+  color: rgba(218, 71, 115, 0.584);
+}
+.nav-search::after {
+  content: url(img/search.svg);
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+  left: 5px;
+}
+.nav-search input:focus {
+  outline: none;
+}
+.nav-button button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fd004e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+.nav-button button:hover {
+  background-color: transparent;
+  border: 1px solid #fd004e;
+  cursor: pointer;
+  color: #000;
+  transform: translatey(8px);
+}
+/* NAVBAR */
+
+.container {
+  background-color: var(--body-bg);
+  min-height: 100vh;
+  padding-top: 15px;
+}
+.content {
+  min-height: 70vh;
+
+  max-width: 85vw;
+  margin: 0 auto;
+}
+.content-right {
+  padding: 10px 10px;
+  border-left: 1px solid #000;
+  text-align: center;
+  float: right;
+  min-width: 20vw;
+  margin: 0 auto;
+  /* background-color: rgb(113, 13, 214); */
+}
+.content-right img {
+  border: none;
+  border-radius: 5px;
+  transition: all 0.7s ease-in-out;
+}
+.content-right img:hover {
+  filter: drop-shadow(4px 12px 15px #fd004ca0);
+  cursor: not-allowed;
+  transform: translateY(-10px);
+  border-radius: 8px;
+}
+.content-left {
+  border-top: 2px solid #fd004e;
+  float: left;
+  clear: right;
+  max-width: 60vw;
+
+  margin: 0 auto;
+  /* background-color: blue; */
+}
+.content > h1 {
+  background-image: url(img/pakistan.png);
+  background-clip: text;
+  font-size: 40px;
+  background-position: center;
+  color: transparent;
+}
+
+.content h4 {
+  font-size: 18px;
+  font-family: var(--global-font);
+  line-height: 30px;
+  letter-spacing: 0.8px;
+}
+
+.father {
+  display: flex;
+  /* align-items: center; */
+  gap: 20px;
+  padding: 20px 5px;
+}
+.father-image {
+  outline: 1px solid #c5c5c6;
+  outline-offset: 5px;
+  height: auto;
+  width: 200px;
+}
+.section-2 {
+  margin: 20px 0px;
+}
+abbr {
+  height: 22px;
+  background-color: #fd004e;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+.baba {
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  transition: all 2s ease-in-out;
+}
+.baba bdi:hover {
+  color: #fd004e;
+  cursor: pointer;
+}
+hr {
+  background-color: #fd004e;
+  height: 4px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin: 20px auto;
+  width: 75vw;
+}
+.section-2 {
+  /* min-height: 70vh; */
+
+  max-width: 85vw;
+  margin: 0 auto;
+}
+.section-2 h4 {
+  font-size: 18px;
+  font-family: var(--global-font);
+  line-height: 26px;
+  letter-spacing: 0.8px;
+}
+.section-2 > h2 {
+  background-image: url(img/pakistan.png);
+  background-clip: text;
+  font-size: 40px;
+  text-transform: capitalize;
+  background-position: left;
+  color: transparent;
+}
+.section-2 dfn,
+span {
+  font-weight: 600;
+  font-size: 14px;
+  font-family: var(--global-font);
+  line-height: 26px;
+  letter-spacing: 0.8px;
+}
+footer {
+  background-color: var(--header-footer);
+}
+.footer-items h5 {
+  font-size: 16px;
+  font-family: var(--heading-font);
+  line-height: 30px;
+  letter-spacing: 0.8px;
+}
+.footer-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-items div,
+img {
+  padding: 15px 8px;
+  transition: all 0.6s ease-in-out;
+}
+.footer-items img:hover {
+  background-color: var(--body-bg);
+  border-radius: 10px 0px 10px 0px;
+  transform: translateY(-10px);
+}
